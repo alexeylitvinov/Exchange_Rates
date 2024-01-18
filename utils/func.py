@@ -7,22 +7,6 @@ API_KEY = os.getenv('EXCHANGE_RATE_API_KEY')
 CURRENCY_RATE_FILE = 'currency_rate.json'
 
 
-# print(os.environ['EXCHANGE_RATE_API_KEY'])
-# value = os.getenv('EXCHANGE_RATE_API_KEY')
-# print(value)
-# print(os.environ.get('EXCHANGE_RATE_API_KEY'))
-# response = requests.get('https://api.github.com')
-# print(response)
-# print(dir(response))
-# print(response.status_code)
-# print(response.content)
-# print(response.text)
-# j = response.json()
-# print(j)
-# print(type(j))
-# print(j['current_user_url'])
-
-
 def get_currency_rate(base: str) -> float:
     """
     Получает курс валюты относительно рубля от API и возвращает float
